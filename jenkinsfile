@@ -6,5 +6,10 @@ pipeline {
           sh "ansible --version "
       }
     }
+    stage('java-exec-path'){
+      steps{
+          sh "which java "
+      }
+    }
   }
 }
